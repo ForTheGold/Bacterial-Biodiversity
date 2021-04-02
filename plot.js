@@ -17,25 +17,36 @@
 // 	yaxis: {title: 'Population Growth: 2016-2017'}
 // };
 
-Plotly.newPlot('bar-plot', data, layout);
+// Plotly.newPlot('bar-plot', data, layout);
 
-var sortedCities = cityGrowths.sort((a,b) => a.Increase_from_2016 - b.Increase_from_2016).reverse();
-var topSevenCities = sortedCities.slice(0, 7);
-var topSevenCityNames = topSevenCities.map(city => city.City);
-var topSevenCityGrowths = topSevenCities.map(city => parseInt(city.Increase_from_2016));
+// var sortedCities = cityGrowths.sort((a,b) => a.Increase_from_2016 - b.Increase_from_2016).reverse();
+// var topSevenCities = sortedCities.slice(0, 7);
+// var topSevenCityNames = topSevenCities.map(city => city.City);
+// var topSevenCityGrowths = topSevenCities.map(city => parseInt(city.Increase_from_2016));
 
-var trace = {
-	x: topSevenCityNames,
-	y: topSevenCityGrowths,
-	type: 'bar'
-};
+// var trace = {
+// 	x: topSevenCityNames,
+// 	y: topSevenCityGrowths,
+// 	type: 'bar'
+// };
 
-var data = [trace];
+// var data = [trace];
 
-var layout = {
-	title: 'Most Rapidly Growing Cities',
-	xaxis: {title: 'city'},
-	yaxis: {title: 'Population Growth: 2016-2017'}
-};
+// var layout = {
+// 	title: 'Most Rapidly Growing Cities',
+// 	xaxis: {title: 'city'},
+// 	yaxis: {title: 'Population Growth: 2016-2017'}
+// };
 
-Plotly.newPlot('bar-plot', data, layout);
+// Plotly.newPlot('bar-plot', data, layout);
+
+// d3.json("samples.json").then(function(data){
+//     wfreq = data.metadata.map(person =>
+// person.wfreq).sort((a,b) => b - a);
+//     console.log(wfreq);
+// });
+
+d3.json("samples.json").then(function(data){
+	var firstPerson = data.metadata[0];
+    Object.entries(firstPerson).forEach(([key, value])=>{console.log(key, value)})
+});
