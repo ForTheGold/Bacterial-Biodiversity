@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -16,6 +17,7 @@
       <div class="col-md-12 jumbotron text-center">
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
+        <img src="img/navel.jpg" class="img-rounded img-responsive center-block" />
       </div>
     </div>
     <div class="row">
@@ -32,19 +34,32 @@
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
+      <div class="col-md-10">
+        <div class="media">
+          <div class="media-body">
+            <h3 class="mt-0 text-center">Bacterial Biodiversity in the Navel</h5>
+            <p class="text-center">In an effort to find a type of bacteria that can be used to create a product that tastes similar to beef, we have been exploring bacteria in the navel.  This is an analysis of different types of bacteria that exist within the navel for a number of participants in the study.  This shows the amount of and type of bacteria found in the navel of each participant as well as how often the particpant cleaned their bellybutton.</p>
+          </div>
+        </div>
+      </div>
+
+
       <div class="col-md-5">
         <div id="bar"></div>
+        <p class="text-center"><small class="text-muted">Horizontal bar chart displaying the top ten types of bacteria found.  Hover for bacteria types</small></p>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
+        <p class="text-center"><small class="text-muted">Participant navel washing per week</small></p>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+        <p class="text-center"><small class="text-muted">Amount of bacteria per a sample.  Hover for types of bacteria found</small></p>
       </div>
     </div>
-  </div>
+  </div> 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>

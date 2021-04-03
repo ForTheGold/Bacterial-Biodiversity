@@ -116,8 +116,6 @@ function buildCharts(sample) {
     var bubbleLayout = {
       title: 'Bacteria Cultures Per Sample',
       xaxis:{title: 'OTU ID'},
-      height: 600,
-      width: 1000,
       hovermode:'closest'
     };
 
@@ -150,8 +148,6 @@ function buildCharts(sample) {
     
     // 5. Create the layout for the gauge chart.
     var gaugeLayout = { 
-      width: 600, 
-      height: 450, 
       margin: { t: 0, b: 0 } 
     };
 
