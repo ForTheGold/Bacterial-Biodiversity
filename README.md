@@ -14,7 +14,7 @@ Our research has shown us that there are already labs around the country that ha
 
 ### Methodology
 
-We have sampled the navels of people across the country in order to identify bacteria species that colonize the belly buttons of human beings.  Each person’s identity is anonymous and the samples can instead be accessed through an ID number.  The idea is to build a dashboard of the information that has been gleaned from the study and present it so that it can be accessed by both researchers for further research as well as participants of the study for their own interest.
+We have sampled the navels of people across the country in order to identify bacteria species that colonize the belly buttons of human beings.  Each personâ€™s identity is anonymous and the samples can instead be accessed through an ID number.  The idea is to build a dashboard of the information that has been gleaned from the study and present it so that it can be accessed by both researchers for further research as well as participants of the study for their own interest.
 
 ## Outcomes
 
@@ -22,14 +22,18 @@ The outcomes of the study have been published at a website viewable here: https:
 
 The general layout of the website can be seen in the following image.
 
-
+![Website Layout](https://github.com/ForTheGold/Bacterial-Biodiversity/blob/main/Resources/img1.png)
 
 The menu on the left side of the page can be used to select the results of a given participant.  The tables and graphs will update dynamically according to the participant that has been selected in the dropdown menu.  The drop down menu, the table of information and two of the graphs can be viewed in the following image.
 
-
+![Two Tables](https://github.com/ForTheGold/Bacterial-Biodiversity/blob/main/Resources/img2.png)
 
 The final image displays the third and final graph.  All of the graphs are created dynamically from the data.
 
-
+![Final Table](https://github.com/ForTheGold/Bacterial-Biodiversity/blob/main/Resources/img3.png)
 
 ## Technologies
+* JavaScript
+* Plotly
+* D3
+* HTML, CSS, BootStrap
